@@ -1,0 +1,20 @@
+$color-theme: (
+  "primary": var(--primary),
+  "tint-1": var(--tint-1),
+  "tint-2": var(--tint-2),
+  "tint-3": var(--tint-3),
+  "tint-4": var(--tint-4),
+  "tint-5": var(--tint-5),
+);
+
+// text & background
+@each $name, $color in $color-theme {
+  // text
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}

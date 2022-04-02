@@ -1,0 +1,103 @@
+@use "../layout/" as *;
+@use "../abstracts/" as *;
+
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: transparent;
+  z-index: 10;
+  transition: background-color 0.5s;
+  &.active {
+    background-color: rgba(#fff, 1);
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-image {
+    height: 1.5rem;
+  }
+
+  &__toggler {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    &[aria-expanded="true"] .nav__icon-open {
+      display: none;
+    }
+    &[aria-expanded="true"] .nav__icon-close {
+      display: block;
+    }
+    &[aria-expanded="true"] + .nav__list {
+      transform: translateX(0);
+    }
+  }
+  &__list {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    transform: translateX(100%);
+    list-style-type: none;
+    background-color: rgba(#fff, 0.96);
+    &.activated {
+      transition: transform 0.5s;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: color 0.4s;
+    &:hover {
+      color: hsl($primary-h, $primary-s, $primary-l);
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  @include lg {
+    &__toggler {
+      display: none;
+    }
+    &__list {
+      width: initial;
+      height: initial;
+      position: static;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      z-index: 0;
+      background-color: transparent;
+      border-bottom: none;
+      transform: translateX(0);
+    }
+  }
+  .btn-menu {
+    color: #fff;
+  }
+  &__logo:focus-visible,
+  &__link:focus-visible {
+    outline: 1px solid #333;
+    outline-offset: 0.2em;
+    border-radius: 0.5rem;
+  }
+}

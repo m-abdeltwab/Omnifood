@@ -1,0 +1,361 @@
+@use '../abstracts' as *;
+@use "sass:math";
+
+$utilities: (
+  // ##################
+  // Padding ##########
+  // ##################
+  "padding":
+    (
+      "prefix": "p",
+      "values": (
+        "default": 0,
+        "1": $base-padding,
+        "2": $base-padding * 2,
+        "3": $base-padding * 3,
+        "4": $base-padding * 4,
+        "5": $base-padding * 5,
+      ),
+    ),
+  "padding-left": (
+    "prefix": "pl",
+    "values": (
+      "default": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-right": (
+    "prefix": "pr",
+    "values": (
+      "default": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-top": (
+    "prefix": "pt",
+    "values": (
+      "default": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-bottom": (
+    "prefix": "pb",
+    "values": (
+      "default": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  // ##################
+  // Margin ##########
+  // ##################
+  "margin":
+    (
+      "prefix": "m",
+      "values": (
+        "default": 0,
+        "1": $base-margin,
+        "2": $base-margin * 2,
+        "3": $base-margin * 3,
+        "4": $base-margin * 4,
+        "5": $base-margin * 5,
+      ),
+    ),
+  "margin-left": (
+    "prefix": "ml",
+    "values": (
+      "default": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-right": (
+    "prefix": "mr",
+    "values": (
+      "default": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-top": (
+    "prefix": "mt",
+    "values": (
+      "default": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-bottom": (
+    "prefix": "mb",
+    "values": (
+      "default": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "gap": (
+    "prefix": "gap",
+    "values": (
+      "0": 0rem,
+      "1": 1rem,
+      "2":  2rem,
+      "3":  3rem,
+      "4":  4rem,
+      "5":  5rem,
+    ),
+  ),
+  
+ 
+  // ################
+  // Opacity ########
+  // ################
+  "opacity":
+    (
+      "prefix": "o",
+      "values": (
+        "default": 1,
+        "0": 0,
+        "10": 0.1,
+        "20": 0.2,
+        "30": 0.4,
+        "40": 0.5,
+        "50": 0.5,
+        "60": 0.6,
+        "70": 0.7,
+        "80": 0.8,
+        "90": 0.9,
+      ),
+    ),
+  // ################
+  // Border Radius ##
+  // ################
+  "border-radius":
+    (
+      "prefix": "br",
+      "values": (
+        "default": $base-border-radius,
+        "none": 0,
+        "xs": math.div($base-border-radius , 4) ,
+        "sm": math.div($base-border-radius , 2) ,
+        "lg": $base-border-radius * 2,
+        "full": 50%,
+      ),
+    ),
+  // ################
+  // Display  #######
+  // ################
+  "display":
+    (
+      "prefix": "d",
+      "values": (
+        "none": none,
+        "inline": inline,
+        "block": block,
+        "inline-block": inline-block,
+        "flex": flex,
+        "grid": grid,
+      ),
+    ),
+  "flex-direction":
+    (
+      "prefix": "f",
+      "values": (
+        "row": row,
+        "column": column,
+        
+      ),
+    ),
+  // ################
+  // Font Sizes #####
+  // ################
+  "font-size":
+    (
+      "prefix": "fs",
+      "values": (
+    "12":	0.75rem,
+    "14":	0.875rem,
+    "16":	1rem,
+    "18":	1.125rem,
+    "20":	1.25rem,
+    "22":	1.375rem,
+    "24":	1.5rem,
+    "28":	1.75rem,
+    "32":	2rem,
+    "36":	2.25rem,
+    "40":	2.5rem,
+    "44":	2.75rem,
+    "48":	3rem,
+    "50":	3.125rem,
+    "56":	3.5rem,
+    "64":4.688rem,
+    "75":	4.688rem,
+    "80":	5rem,
+    "90":	5.625rem,
+    "100":	6.25rem,
+      ),
+    ),
+  "font-weight":
+    (
+      "prefix": "fw",
+      "values": (
+        "100": 100,
+        "200": 200,
+        "300": 300,
+        "400": 400,
+        "500": 500,
+        "600": 600,
+        "700": 700,
+        "800": 800,
+        "900": 900,
+        
+      ),
+    ),
+  "letter-spacing":
+    (
+      "prefix": "ls",
+      "values": (
+        "1": 1px,
+        "2": 2px,
+        "3": 3px,
+        "4": 4px,
+        "5": 5px,
+        "6": 6px,
+        "7": 7px,
+        "8": 8px,
+        "9": 9px,
+        
+        
+      ),
+    ),
+  "line-height":
+    (
+      "prefix": "ls",
+      "values": (
+        "1": 1,
+        "2": 1.2,
+        "3": 1.4,
+        "4": 1.6,
+        "5": 1.8,
+        "6": 2,
+        "7": 2.2,
+        "8": 2.4,
+        "9": 2.6,
+
+      ),
+    ),
+ 
+  "text-align":
+    (
+      "prefix": "text",
+      "values": (
+        "start": start,
+        "center": center,
+        "end": end,
+        "justify": justify,
+      ),
+    ),
+  "text-transform":
+    (
+      "prefix": "text",
+      "values": (
+        "none": none,
+        "capital": capitalize,
+        "upper": uppercase,
+        "lower": lowercase, 
+      ),
+    ),
+  "justify-content":
+    (
+      "prefix": "justify",
+      "values": (
+        "start": flex-start,
+              "end": flex-end,
+              "center": center,
+              "between": space-between,
+              "around": space-around,    
+      ),
+    ),
+  "align-items":
+    (
+      "prefix": "align",
+      "values": (
+        "start": flex-start,
+              "end": flex-end,
+              "center": center,
+              "between": space-between,
+              "around": space-around,    
+      ),
+    ),
+  "order":
+    (
+      "prefix": "order",
+      "values": (
+        "0":"0",
+        "1" :1 ,
+        "2" :2 ,
+        "3" :3 ,
+        "4" :4 ,
+        "5" :5 ,
+        "6" :6 ,
+        "7" :7 ,
+        "8" :8 ,
+        "9 ":9,
+      ),
+    ),
+  "overflow":
+    (
+      "prefix": "overflow",
+      "values": (
+        "hidden":hidden,
+        "clip" :clip ,
+        
+      ),
+    ),
+ 
+
+);
+
+// Generate Classes
+@each $pro, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $value: map-get($map, "values");
+
+  @each $key, $val in $value {
+    @if ($key == "default") {
+      .#{$prefix} {
+        #{$pro}: $val;
+      }
+    } @else {
+      .#{$prefix}-#{$key} {
+        #{$pro}: $val;
+      }
+    }
+  }
+}
