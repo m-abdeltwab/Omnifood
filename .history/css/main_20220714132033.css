@@ -1,0 +1,2252 @@
+:root {
+  --primary: #e67e22;
+  --tint-1: #fdf2e9;
+  --tint-2: #fae5d3;
+  --tint-3: #f5cba7;
+  --tint-4: #f3bf91;
+  --tint-5: #eb984e;
+  --shade-1: #cf711f;
+  --shade-2: #a15818;
+  --shade-3: #8a4c14;
+  --shade-4: #45260a;
+  --shade-5: #2e1907;
+  --white: #fff;
+  --black: #000;
+}
+
+/* ================ */
+/* Reset */
+/* ================ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+/* Set core body defaults */
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style-type: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-tint-1 {
+  color: var(--tint-1);
+}
+
+.bg-tint-1 {
+  background-color: var(--tint-1);
+}
+
+.text-tint-2 {
+  color: var(--tint-2);
+}
+
+.bg-tint-2 {
+  background-color: var(--tint-2);
+}
+
+.text-tint-3 {
+  color: var(--tint-3);
+}
+
+.bg-tint-3 {
+  background-color: var(--tint-3);
+}
+
+.text-tint-4 {
+  color: var(--tint-4);
+}
+
+.bg-tint-4 {
+  background-color: var(--tint-4);
+}
+
+.text-tint-5 {
+  color: var(--tint-5);
+}
+
+.bg-tint-5 {
+  background-color: var(--tint-5);
+}
+
+.p {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 16px;
+}
+
+.p-2 {
+  padding: 32px;
+}
+
+.p-3 {
+  padding: 48px;
+}
+
+.p-4 {
+  padding: 64px;
+}
+
+.p-5 {
+  padding: 80px;
+}
+
+.pl {
+  padding-left: 0;
+}
+
+.pl-1 {
+  padding-left: 16px;
+}
+
+.pl-2 {
+  padding-left: 32px;
+}
+
+.pl-3 {
+  padding-left: 48px;
+}
+
+.pl-4 {
+  padding-left: 64px;
+}
+
+.pl-5 {
+  padding-left: 80px;
+}
+
+.pr {
+  padding-right: 0;
+}
+
+.pr-1 {
+  padding-right: 16px;
+}
+
+.pr-2 {
+  padding-right: 32px;
+}
+
+.pr-3 {
+  padding-right: 48px;
+}
+
+.pr-4 {
+  padding-right: 64px;
+}
+
+.pr-5 {
+  padding-right: 80px;
+}
+
+.pt {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: 16px;
+}
+
+.pt-2 {
+  padding-top: 32px;
+}
+
+.pt-3 {
+  padding-top: 48px;
+}
+
+.pt-4 {
+  padding-top: 64px;
+}
+
+.pt-5 {
+  padding-top: 80px;
+}
+
+.pb {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 16px;
+}
+
+.pb-2 {
+  padding-bottom: 32px;
+}
+
+.pb-3 {
+  padding-bottom: 48px;
+}
+
+.pb-4 {
+  padding-bottom: 64px;
+}
+
+.pb-5 {
+  padding-bottom: 80px;
+}
+
+.m {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 16px;
+}
+
+.m-2 {
+  margin: 32px;
+}
+
+.m-3 {
+  margin: 48px;
+}
+
+.m-4 {
+  margin: 64px;
+}
+
+.m-5 {
+  margin: 80px;
+}
+
+.ml {
+  margin-left: 0;
+}
+
+.ml-1 {
+  margin-left: 16px;
+}
+
+.ml-2 {
+  margin-left: 32px;
+}
+
+.ml-3 {
+  margin-left: 48px;
+}
+
+.ml-4 {
+  margin-left: 64px;
+}
+
+.ml-5 {
+  margin-left: 80px;
+}
+
+.mr {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: 16px;
+}
+
+.mr-2 {
+  margin-right: 32px;
+}
+
+.mr-3 {
+  margin-right: 48px;
+}
+
+.mr-4 {
+  margin-right: 64px;
+}
+
+.mr-5 {
+  margin-right: 80px;
+}
+
+.mt {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 16px;
+}
+
+.mt-2 {
+  margin-top: 32px;
+}
+
+.mt-3 {
+  margin-top: 48px;
+}
+
+.mt-4 {
+  margin-top: 64px;
+}
+
+.mt-5 {
+  margin-top: 80px;
+}
+
+.mb {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 16px;
+}
+
+.mb-2 {
+  margin-bottom: 32px;
+}
+
+.mb-3 {
+  margin-bottom: 48px;
+}
+
+.mb-4 {
+  margin-bottom: 64px;
+}
+
+.mb-5 {
+  margin-bottom: 80px;
+}
+
+.gap-0 {
+  gap: 0rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.o {
+  opacity: 1;
+}
+
+.o-0 {
+  opacity: 0;
+}
+
+.o-10 {
+  opacity: 0.1;
+}
+
+.o-20 {
+  opacity: 0.2;
+}
+
+.o-30 {
+  opacity: 0.4;
+}
+
+.o-40 {
+  opacity: 0.5;
+}
+
+.o-50 {
+  opacity: 0.5;
+}
+
+.o-60 {
+  opacity: 0.6;
+}
+
+.o-70 {
+  opacity: 0.7;
+}
+
+.o-80 {
+  opacity: 0.8;
+}
+
+.o-90 {
+  opacity: 0.9;
+}
+
+.br {
+  border-radius: 16px;
+}
+
+.br-none {
+  border-radius: 0;
+}
+
+.br-xs {
+  border-radius: 4px;
+}
+
+.br-sm {
+  border-radius: 8px;
+}
+
+.br-lg {
+  border-radius: 32px;
+}
+
+.br-full {
+  border-radius: 50%;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+
+.fs-14 {
+  font-size: 0.875rem;
+}
+
+.fs-16 {
+  font-size: 1rem;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.fs-22 {
+  font-size: 1.375rem;
+}
+
+.fs-24 {
+  font-size: 1.5rem;
+}
+
+.fs-28 {
+  font-size: 1.75rem;
+}
+
+.fs-32 {
+  font-size: 2rem;
+}
+
+.fs-36 {
+  font-size: 2.25rem;
+}
+
+.fs-40 {
+  font-size: 2.5rem;
+}
+
+.fs-44 {
+  font-size: 2.75rem;
+}
+
+.fs-48 {
+  font-size: 3rem;
+}
+
+.fs-50 {
+  font-size: 3.125rem;
+}
+
+.fs-56 {
+  font-size: 3.5rem;
+}
+
+.fs-64 {
+  font-size: 4.688rem;
+}
+
+.fs-75 {
+  font-size: 4.688rem;
+}
+
+.fs-80 {
+  font-size: 5rem;
+}
+
+.fs-90 {
+  font-size: 5.625rem;
+}
+
+.fs-100 {
+  font-size: 6.25rem;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.ls-3 {
+  letter-spacing: 3px;
+}
+
+.ls-4 {
+  letter-spacing: 4px;
+}
+
+.ls-5 {
+  letter-spacing: 5px;
+}
+
+.ls-6 {
+  letter-spacing: 6px;
+}
+
+.ls-7 {
+  letter-spacing: 7px;
+}
+
+.ls-8 {
+  letter-spacing: 8px;
+}
+
+.ls-9 {
+  letter-spacing: 9px;
+}
+
+.ls-1 {
+  line-height: 1;
+}
+
+.ls-2 {
+  line-height: 1.2;
+}
+
+.ls-3 {
+  line-height: 1.4;
+}
+
+.ls-4 {
+  line-height: 1.6;
+}
+
+.ls-5 {
+  line-height: 1.8;
+}
+
+.ls-6 {
+  line-height: 2;
+}
+
+.ls-7 {
+  line-height: 2.2;
+}
+
+.ls-8 {
+  line-height: 2.4;
+}
+
+.ls-9 {
+  line-height: 2.6;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-none {
+  text-transform: none;
+}
+
+.text-capital {
+  text-transform: capitalize;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-between {
+  align-items: space-between;
+}
+
+.align-around {
+  align-items: space-around;
+}
+
+.order-0 {
+  order: "0";
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-6 {
+  order: 6;
+}
+
+.order-7 {
+  order: 7;
+}
+
+.order-8 {
+  order: 8;
+}
+
+.order-9 {
+  order: 9;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
+}
+
+.btn, .btn-outline-light, .btn-shade, .btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.btn-primary:hover, .btn-primary:active {
+  background-color: var(--shade-1);
+}
+
+.btn-shade {
+  background-color: var(--shade-5);
+  color: var(--white);
+}
+.btn-shade:hover, .btn-shade:active {
+  background-color: var(--shade-1);
+}
+
+.btn-outline-light {
+  box-shadow: inset 0 0 0 3px var(--white);
+  background-color: var(--white);
+  color: var(--black);
+}
+.btn-outline-light:hover, .btn-outline-light:active {
+  background-color: transparent;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.col-space-0 > * {
+  padding-right: 0;
+}
+
+.col-space-0 {
+  margin-right: 0;
+}
+
+.row-space-0 > * {
+  padding-top: 0;
+}
+
+.row-space-0 {
+  margin-top: 0;
+}
+
+.col-space-1 > * {
+  padding-right: 1rem;
+}
+
+.col-space-1 {
+  margin-right: -1rem;
+}
+
+.row-space-1 > * {
+  padding-top: 1rem;
+}
+
+.row-space-1 {
+  margin-top: -1rem;
+}
+
+.col-space-2 > * {
+  padding-right: 2rem;
+}
+
+.col-space-2 {
+  margin-right: -2rem;
+}
+
+.row-space-2 > * {
+  padding-top: 2rem;
+}
+
+.row-space-2 {
+  margin-top: -2rem;
+}
+
+.col-space-3 > * {
+  padding-right: 3rem;
+}
+
+.col-space-3 {
+  margin-right: -3rem;
+}
+
+.row-space-3 > * {
+  padding-top: 3rem;
+}
+
+.row-space-3 {
+  margin-top: -3rem;
+}
+
+.col-space-4 > * {
+  padding-right: 4rem;
+}
+
+.col-space-4 {
+  margin-right: -4rem;
+}
+
+.row-space-4 > * {
+  padding-top: 4rem;
+}
+
+.row-space-4 {
+  margin-top: -4rem;
+}
+
+.col-space-5 > * {
+  padding-right: 5rem;
+}
+
+.col-space-5 {
+  margin-right: -5rem;
+}
+
+.row-space-5 > * {
+  padding-top: 5rem;
+}
+
+.row-space-5 {
+  margin-top: -5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@media (min-width: 0) {
+  .grid-xs-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-xs-1 {
+    grid-column: span 1;
+  }
+
+  .grid-xs-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-xs-2 {
+    grid-column: span 2;
+  }
+
+  .grid-xs-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-xs-3 {
+    grid-column: span 3;
+  }
+
+  .grid-xs-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-xs-4 {
+    grid-column: span 4;
+  }
+
+  .grid-xs-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .col-xs-5 {
+    grid-column: span 5;
+  }
+
+  .grid-xs-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .col-xs-6 {
+    grid-column: span 6;
+  }
+
+  .grid-xs-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .col-xs-7 {
+    grid-column: span 7;
+  }
+
+  .grid-xs-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .col-xs-8 {
+    grid-column: span 8;
+  }
+
+  .grid-xs-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .col-xs-9 {
+    grid-column: span 9;
+  }
+
+  .grid-xs-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .col-xs-10 {
+    grid-column: span 10;
+  }
+
+  .grid-xs-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .col-xs-11 {
+    grid-column: span 11;
+  }
+
+  .grid-xs-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .col-xs-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 480px) {
+  .grid-sm-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+
+  .grid-sm-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .grid-sm-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .grid-sm-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .grid-sm-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .grid-sm-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .grid-sm-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .grid-sm-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .grid-sm-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .grid-sm-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .grid-sm-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .grid-sm-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 720px) {
+  .grid-md-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+  }
+
+  .grid-md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .grid-md-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .grid-md-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .grid-md-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .grid-md-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .grid-md-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .grid-md-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .grid-md-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .grid-md-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .grid-md-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .grid-md-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .col-md-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 960px) {
+  .grid-lg-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+
+  .grid-lg-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .grid-lg-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .grid-lg-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .grid-lg-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .grid-lg-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .grid-lg-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .grid-lg-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .grid-lg-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .grid-lg-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .grid-lg-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .grid-lg-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-xl-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-xl-1 {
+    grid-column: span 1;
+  }
+
+  .grid-xl-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-xl-2 {
+    grid-column: span 2;
+  }
+
+  .grid-xl-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-xl-3 {
+    grid-column: span 3;
+  }
+
+  .grid-xl-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-xl-4 {
+    grid-column: span 4;
+  }
+
+  .grid-xl-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .col-xl-5 {
+    grid-column: span 5;
+  }
+
+  .grid-xl-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .col-xl-6 {
+    grid-column: span 6;
+  }
+
+  .grid-xl-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .col-xl-7 {
+    grid-column: span 7;
+  }
+
+  .grid-xl-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .col-xl-8 {
+    grid-column: span 8;
+  }
+
+  .grid-xl-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .col-xl-9 {
+    grid-column: span 9;
+  }
+
+  .grid-xl-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .col-xl-10 {
+    grid-column: span 10;
+  }
+
+  .grid-xl-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .col-xl-11 {
+    grid-column: span 11;
+  }
+
+  .grid-xl-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .col-xl-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1400px) {
+  .grid-xxl-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-xxl-1 {
+    grid-column: span 1;
+  }
+
+  .grid-xxl-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-xxl-2 {
+    grid-column: span 2;
+  }
+
+  .grid-xxl-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-xxl-3 {
+    grid-column: span 3;
+  }
+
+  .grid-xxl-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-xxl-4 {
+    grid-column: span 4;
+  }
+
+  .grid-xxl-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .col-xxl-5 {
+    grid-column: span 5;
+  }
+
+  .grid-xxl-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .col-xxl-6 {
+    grid-column: span 6;
+  }
+
+  .grid-xxl-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .col-xxl-7 {
+    grid-column: span 7;
+  }
+
+  .grid-xxl-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .col-xxl-8 {
+    grid-column: span 8;
+  }
+
+  .grid-xxl-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .col-xxl-9 {
+    grid-column: span 9;
+  }
+
+  .grid-xxl-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .col-xxl-10 {
+    grid-column: span 10;
+  }
+
+  .grid-xxl-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .col-xxl-11 {
+    grid-column: span 11;
+  }
+
+  .grid-xxl-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .col-xxl-12 {
+    grid-column: span 12;
+  }
+}
+/* header */
+.hero__customers img {
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: -10px;
+  border: 4px solid #fcf2e8;
+}
+
+/* Featured in  */
+.heading-featured {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3.2rem 0 2.4rem 0;
+  color: #777;
+}
+
+.featured__images img {
+  height: 1rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* How it Works */
+.step__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step__img::after {
+  content: "";
+  background-color: #fcf2e8;
+  border-radius: 50%;
+  padding: 4rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.step__img::before {
+  content: "";
+  display: block;
+  background-color: #fcf2e8;
+  border-radius: 50%;
+  padding: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.step__img img {
+  width: 30%;
+}
+
+/* Meals */
+.meals {
+  color: #444;
+}
+
+.meals__card {
+  max-width: 70%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  justify-self: center;
+  transition: transform 0.5s;
+  border-radius: 10px;
+}
+.meals__card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal__tag {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 0.3rem 0.6rem;
+}
+
+.vegetarian {
+  background-color: #51cf66;
+}
+
+.vegan {
+  background-color: #69db7c;
+}
+
+.paleo {
+  background-color: #ffd43b;
+}
+
+.meal-name {
+  font-weight: 600;
+}
+
+.diets__types li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.recipes__link {
+  box-shadow: 0 1px 0 0;
+  transition: box-shadow 0.5s;
+}
+.recipes__link:hover {
+  box-shadow: none;
+}
+
+/* Testimonials */
+.customer__img {
+  height: 3rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.feedback__quote {
+  line-height: 2;
+}
+
+.customer__name {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.gallery div {
+  overflow: hidden;
+}
+
+.meals-img {
+  transition: all 0.3s;
+}
+
+.meals-img:hover {
+  transform: scale(1.1);
+}
+
+.pricing__card {
+  border: 2px solid #fcf2e8;
+  border-radius: 11px;
+  text-align: center;
+}
+.pricing__card-head .card__name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #cf6d17;
+}
+.pricing__card-head .card__price {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.pricing__card-head .card__price span {
+  font-size: 1.5rem;
+}
+.pricing__card-head .card__text {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: #777;
+}
+.pricing__card-features {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pricing__card-features li {
+  display: flex;
+  align-items: center;
+}
+
+.complete-plan {
+  background-color: #fcf2e8;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete-plan::after {
+  content: "BEST VALUE";
+  display: block;
+  padding: 0.2rem 4rem;
+  background-color: #ffd43b;
+  font-weight: 700;
+  position: absolute;
+  top: 8%;
+  right: -10%;
+  transform: rotate(45deg);
+}
+
+.cta {
+  overflow: clip;
+}
+.cta__img {
+  min-height: 30vh;
+  background-image: linear-gradient(to right, rgba(235, 152, 78, 0.3), rgba(235, 152, 78, 0.3)), url(../img/eating.jpg);
+  background-size: cover;
+}
+.cta .btn {
+  width: 100%;
+}
+
+/* ****************** */
+/**** CTA Section *****/
+/* ****************** */
+.form label,
+.form input,
+.form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form select {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 30px;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: 0.5rem solid rgba(221, 221, 221, 0.486);
+}
+
+/* ****************** */
+/**** footer *****/
+/* ****************** */
+.footer {
+  border-top: 1px solid #eee;
+}
+.footer a,
+.footer .copyright {
+  color: #888;
+}
+.footer .col__head {
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+.footer .col__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.footer .social__media-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: transparent;
+  z-index: 10;
+  transition: background-color 0.5s;
+}
+.nav.active {
+  background-color: white;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo-image {
+  height: 1.5rem;
+}
+.nav__toggler {
+  border: none;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.nav__toggler[aria-expanded=true] .nav__icon-open {
+  display: none;
+}
+.nav__toggler[aria-expanded=true] .nav__icon-close {
+  display: block;
+}
+.nav__toggler[aria-expanded=true] + .nav__list {
+  transform: translateX(0);
+}
+.nav__list {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  transform: translateX(100%);
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+.nav__list.activated {
+  transition: transform 0.5s;
+}
+.nav__link {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: color 0.4s;
+}
+.nav__link:hover {
+  color: #e77e23;
+}
+.nav .hidden {
+  display: none;
+}
+@media (min-width: 960px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    width: initial;
+    height: initial;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 0;
+    background-color: transparent;
+    border-bottom: none;
+    transform: translateX(0);
+  }
+}
+.nav .btn-menu {
+  color: #fff;
+}
+.nav__logo:focus-visible, .nav__link:focus-visible {
+  outline: 1px solid #333;
+  outline-offset: 0.2em;
+  border-radius: 0.5rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+*:focus {
+  outline: none;
+  outline: 0.5rem solid #cf711f;
+}
+
+p {
+  line-height: 1.6;
+}

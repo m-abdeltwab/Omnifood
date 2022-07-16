@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+-
+  Spacing
+  system
+  (px)
+  2
+  /
+  4
+  /
+  8
+  /
+  12
+  /
+  16
+  /
+  24
+  /
+  32
+  /
+  48
+  /
+  64
+  /
+  80
+  /
+  96
+  /
+  128
+  \*/
+  :root {
+  /* colors */
+  --clr-primary: #e67e22;
+  --clr-tints-1: #fdf2e9;
+  --clr-tints-2: #fae5d3;
+  --clr-tints-3: #eb984e;
+  --clr-shades-1: #cf711f;
+  --clr-shades-2: #45260a;
+  --clr-gray-1: #888;
+  --clr-gray-2: #767676;
+  --clr-gray-3: #6f6f6f;
+  --clr-gray-4: #555;
+  --clr-gray-5: #333;
+  --clr-black: #000;
+  --clr-white: #fff;
+  /* fonts */
+  --fs-small: 0.75rem; /* 12px */
+  --fs-base: 1rem; /* 16px */
+  --fs-100: 1.25rem; /* 20px */
+  --fs-200: 1.5rem; /* 24px */
+  --fs-300: 2rem; /* 32px */
+  --fs-400: 2.5rem; /* 40px */
+  --fs-500: 3rem; /* 48px */
+  --fs-600: 3.5rem; /* 56px */
+  --fs-700: 4rem; /* 64px */
+  --fs-800: 4.5rem; /* 72px */
+  --fs-900: 5rem; /* 80px */
+}
+/* Global */
+body {
+  font-family: 'Rubik', sans-serif;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */

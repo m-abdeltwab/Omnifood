@@ -1,0 +1,121 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 110%;
+  }
+  .z-pattern {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .z-pattern div:first-child {
+    order: 1;
+  }
+  .z-pattern div:nth-child(2) {
+    order: 1;
+  }
+  .z-pattern div:nth-child(3) {
+    order: 4;
+  }
+  .z-pattern div:nth-child(4) {
+    order: 3;
+  }
+  .z-pattern div:nth-child(5) {
+    order: 5;
+  }
+  .z-pattern div:nth-child(6) {
+    order: 6;
+  }
+  .card__group {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 100%;
+  }
+  .diet {
+    grid-column: 1/-1;
+  }
+  /* feedback */
+  .feedback {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* pricing */
+  .pricing__card-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .features__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--sp-30);
+  }
+  .footer__col:nth-child(4) {
+    grid-column: span 1;
+    order: -1;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 120%;
+  }
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .img__box-img {
+    width: 80%;
+  }
+  .hero__delivered {
+    gap: var(--sp-0);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .img__box {
+    justify-content: flex-end;
+  }
+  .buttons__group {
+    justify-content: flex-start;
+  }
+
+  .card__group {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .diet {
+    grid-column: 3/-1;
+  }
+
+  .features__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer__wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer__col:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonials__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .feedback {
+    padding: var(--sp-50);
+  }
+}
