@@ -2,7 +2,9 @@
   html {
     font-size: 110%;
   }
-
+  .hero {
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
   .z-pattern {
     grid-template-columns: repeat(2, 1fr);
   }

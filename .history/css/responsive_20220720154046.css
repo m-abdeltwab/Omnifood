@@ -2,7 +2,9 @@
   html {
     font-size: 110%;
   }
-
+  .hero {
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
   .z-pattern {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -82,7 +84,9 @@
     text-align: left;
     justify-content: space-between;
   }
-
+  .hero__heading {
+    font-size: var(--fs-400);
+  }
   .img__box-img {
     width: 80%;
   }

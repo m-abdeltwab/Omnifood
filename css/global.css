@@ -93,3 +93,23 @@ li {
 a {
   text-decoration: none;
 }
+
+p {
+  line-height: 1.6;
+  font-size: var(--fs-base);
+  color: var(--clr-gray-4);
+}
+.sub__heading {
+  text-transform: uppercase;
+  color: var(--clr-shades-1);
+  font-size: var(--fs-small);
+  font-weight: 500;
+}
+.main__heading {
+  padding: var(--sp-10) 0 var(--sp-30) 0;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1.3rem;
+}
